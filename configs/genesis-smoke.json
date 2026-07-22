@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "name": "roborecover-genesis-smoke-v1",
+  "seeds": [1103],
+  "episodes_per_seed": 1,
+  "failure_mix": {
+    "empty_grasp": 1.0
+  },
+  "detector_threshold": 0.62,
+  "max_retries": 1,
+  "success_height_m": 0.08,
+  "strict_single_gpu": true
+}
+

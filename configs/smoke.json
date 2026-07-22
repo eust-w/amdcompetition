@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "name": "roborecover-smoke-v1",
+  "seeds": [1103, 2081, 3181],
+  "episodes_per_seed": 3,
+  "failure_mix": {
+    "none": 0.25,
+    "empty_grasp": 0.25,
+    "slip": 0.25,
+    "pose_offset": 0.25
+  },
+  "detector_threshold": 0.62,
+  "max_retries": 1,
+  "success_height_m": 0.08,
+  "strict_single_gpu": true
+}
+

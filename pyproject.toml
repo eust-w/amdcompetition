@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roborecover"
+version = "0.1.0"
+description = "Reproducible grasp-failure recovery benchmark for AMD Radeon and ROCm"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "RoboRecover contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+genesis = ["genesis-world==1.0.0"]
+
+[project.scripts]
+roborecover = "roborecover.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "name": "roborecover-paired-benchmark-v1",
+  "seeds": [1103, 2081, 3181, 4253, 5323, 6361, 7411, 8513, 9613, 10687, 11717, 12829, 13931, 14947, 16007, 17021, 18133, 19211, 20323, 21419],
+  "episodes_per_seed": 20,
+  "failure_mix": {
+    "none": 0.4,
+    "empty_grasp": 0.2,
+    "slip": 0.2,
+    "pose_offset": 0.2
+  },
+  "detector_threshold": 0.62,
+  "max_retries": 1,
+  "success_height_m": 0.08,
+  "strict_single_gpu": true
+}
+
